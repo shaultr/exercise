@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    padding: 10px;
+  gap: 10px;
+    input,
+    select {
+      width: 220px;
+      height: 40px;
+      font-size: 20px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      appearance: none; 
+    }
+  
+    select {
+      background-color: white;
+    }
+}

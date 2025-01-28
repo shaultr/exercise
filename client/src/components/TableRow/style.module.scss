@@ -1,0 +1,65 @@
+.container {
+    justify-content: space-around;
+
+    td {
+        width: 200px;
+        border: 1px solid gray;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    table {
+        border-spacing: 3px;
+    }
+
+    .post-body {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 200px;
+        cursor: pointer;
+    }
+
+    .full-body {
+        -webkit-line-clamp: unset;
+        display: block;
+        max-width: unset;
+        cursor: text;
+    }
+
+    .pagination {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        button {
+            padding: 5px 10px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+
+            &:disabled {
+                background-color: #cccccc;
+            }
+        }
+
+        span {
+            font-size: 18px;
+        }
+    }
+}
+.popupContent{
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 250px;
+}
