@@ -10,12 +10,11 @@ const createPostsTable = async () => {
 
     try {
         const [data] = await pool.query(SQL);
-        // console.log("Table created successfully:", data);
     } catch (error) {
         console.error("Error creating table:", error.message);
     }
 };
-// createPostsTable()
+createPostsTable()
 
 const insertPost =  async (post) => {
     const SQL = `INSERT INTO posts (userId, id, title, body) VALUES (?, ?, ?, ?)`;
@@ -53,7 +52,7 @@ const getAllPostsSortedByTitle = async (page, limit) => {
 
     return { posts, total };
 };
-// 
+
 
 const getPostsByLetters = async (letters) => {
     const SQL = `SELECT * FROM posts WHERE title LIKE ?`;

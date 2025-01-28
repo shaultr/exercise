@@ -15,7 +15,7 @@ const createCommentsTable = async () => {
         console.error("Error creating table:", error.message);
     }
 };
-// createCommentsTable()
+createCommentsTable()
 const insertComment = async (comment) => {
     const SQL = `INSERT INTO comments (postId, id, name, email, body) VALUES (?, ?, ?, ?, ?)`;
 
